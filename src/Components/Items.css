@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+#img {
+  position: relative;
+  opacity: 1;
+  width: 150px;
+  height: 150px;
+  border: 4px solid black;
+  border-radius: 20%;
+}
+#imgtext {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+
+  align-items: center;
+  top: 15%;
+  left: 10%;
+
+  opacity: 0;
+}
+
+#img:hover {
+  opacity: 0.3;
+}
+
+.container:hover #imgtext {
+  opacity: 1;
+}
